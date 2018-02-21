@@ -17,7 +17,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'aws_runas/version'
 
 Gem::Specification.new do |spec|
-  spec.name = 'aws_runas'
+  spec.name = 'wdi_runas'
   spec.version = AwsRunAs::VERSION
   spec.authors = ['Chris Marchesi']
   spec.email = %w(chrism@vancluevertech.com)
@@ -31,9 +31,6 @@ Gem::Specification.new do |spec|
   spec.bindir = 'exe'
   spec.test_files = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = %w(lib)
-
-  spec.cert_chain  = ['certs/vancluever.pem']
-  spec.signing_key = File.expand_path('~/.ssh/gem-private_key.pem') if $PROGRAM_NAME =~ /gem\z/
 
   spec.required_ruby_version = ['>= 2.2.6']
 
