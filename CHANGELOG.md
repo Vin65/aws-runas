@@ -1,8 +1,13 @@
-## v0.5.1
+## v0.5.2
 
 Fixed the bug where the current PROMPT was not supporting
 shell functions and colors but rather just rendering the old prompt code
 as text. https://github.com/vancluever/aws-runas/issues/13
+
+## 0.5.1
+
+Increase the session timeout from 1 hour to 24 hours.
+Rename from aws_runas to wdi_runas
 
 ## v0.5.0
 
